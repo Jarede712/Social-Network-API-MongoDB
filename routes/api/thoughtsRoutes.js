@@ -7,7 +7,7 @@ const {
   getThoughtById,
   createThought,
   updateThought,
-  deleteThougt,
+  deleteThought,
   addReaction,
   removeReaction,
 } = require('../../controllers/thoughtController');
