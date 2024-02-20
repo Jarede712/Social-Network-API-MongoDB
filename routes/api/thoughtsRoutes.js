@@ -20,7 +20,7 @@ router
   .route('/:id')
   .get(getThoughtById)
   .put(updateThought)
-  .delete(deleteThougt);
+  .delete(deleteThought);
 
 // Set up POST route (/api/thoughts/:thoughtId/reactions)
 router.route('/:thoughtId/reactions').post(addReaction);
