@@ -25,7 +25,7 @@ const thoughtController = {
   // create a thought
   createThought({ body }, res) {
     Thought.create(body)
-      .then9(({ _id }) => {
+      .then(({ _id }) => {
         return User.findOneAndUpdate(
           { _id: body.userId },
           { $push: { thoughts: _id } },
