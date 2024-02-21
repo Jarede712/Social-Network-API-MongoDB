@@ -24,8 +24,6 @@ const reactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      // Use a getter to format the timestamp on query
-      get: (timestamp) => dateFormat(timestamp),
     },
   },
   {
@@ -50,8 +48,6 @@ const thoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      // Use a getter to format the timestamp on query
-      get: (timestamp) => dateFormat(timestamp),
     },
     // Username of the user who created the thought
     username: {
