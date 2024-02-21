@@ -7,7 +7,7 @@ const reactionSchema = new Schema(
     // Unique ID for the reaction
     reactionId: {
       type: Schema.Types.ObjectId,
-      default: () => new Types.ObjectId(),
+      default: () => new Schema.Types.ObjectId(),
     },
     // Text of the reaction
     reactionBody: {
